@@ -31,4 +31,13 @@ public class CartEventConsumer {
             // logic
         }
     }
+
+    @Service
+    @RocketMQMessageListener(topic = "cart-item-removed-topic", consumerGroup = "cart-consumer_cart-item-removed-topic")
+    public class CardItemRemoveConsumer implements RocketMQListener<CartItemEvent> {
+        public void onMessage(CartItemEvent removeItemEvent) {
+            System.out.println("Removing item: " + removeItemEvent);
+            // logic
+        }
+    }
 }
