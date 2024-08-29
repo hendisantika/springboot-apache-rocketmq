@@ -17,7 +17,7 @@
     <properties>
         <java.version>21</java.version>
         <geode.core>1.6.0</geode.core>
-        <rocketmq.version>2.0.4</rocketmq.version>
+        <rocketmq.version>2.3.1</rocketmq.version>
     </properties>
 
     <dependencies>
